@@ -172,7 +172,7 @@ export const AutoCompleteInput: React.FC<AutoCompleteInputProps> = ({
       <View style={{ ...(inputContainerStyle as object) }}>
         <TextInput
           {...inputProps}
-          value={searchQuery}
+          value={inputProps?.value || searchQuery}
           ref={searchRef}
           onChangeText={(text) => {
             setsearchQuery(text);
