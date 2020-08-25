@@ -58,7 +58,7 @@ export interface ListItemProps {
   rightElement?: React.ReactNode;
   contentContainerStyle?: StyleProp<ViewStyle>;
   disabled?: boolean;
-  disabledStyle?: ViewProps;
+  disabledStyle?: StyleProp<ViewStyle>;
   bottomDivider?: boolean;
   topDivider?: boolean;
 }
@@ -203,7 +203,7 @@ export const AutoCompleteInput: React.FC<AutoCompleteInputProps> = ({
                 subtitle:
                   typeof subtitleExtractor === "function"
                     ? subtitleExtractor(item)
-                    : item.type,
+                    : item.address.country,
               })
             }
           />
