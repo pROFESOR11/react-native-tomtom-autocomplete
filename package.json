@@ -1,5 +1,5 @@
 {
-  "name": "tomtom-autocomplete",
+  "name": "react-native-tomtom-autocomplete-example",
   "version": "1.0.0",
   "description": "tomtom autocomplete input component for react-native",
   "main": "dist/index.js",
@@ -14,6 +14,7 @@
     "tomtom",
     "autocomplete",
     "places",
+    "search",
     "react",
     "react native"
   ],
