@@ -1,0 +1,31 @@
+{
+  "name": "tomtom-autocomplete",
+  "version": "1.0.0",
+  "description": "tomtom autocomplete input component for react-native",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean-install": "rm -rf node_modules && yarn"
+  },
+  "keywords": [
+    "tomtom",
+    "autocomplete",
+    "places",
+    "react",
+    "react native"
+  ],
+  "author": "pROFESOR11",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "^16.13.1",
+    "react-native": "^0.62.2",
+    "typescript": "^3.9.7"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}
