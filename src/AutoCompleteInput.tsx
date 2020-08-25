@@ -32,6 +32,7 @@ export interface AutoCompleteInputProps
   listItemsContainerStyle?: StyleProp<ViewStyle>;
   titleExtractor?: (item: TomTomPOISearchResponseResult) => string;
   subtitleExtractor?: (item: TomTomPOISearchResponseResult) => string;
+  disabledExtractor?: (item: TomTomPOISearchResponseResult) => boolean;
   delay?: number;
 }
 
@@ -69,6 +70,7 @@ export const AutoCompleteInput: React.FC<AutoCompleteInputProps> = ({
   listItemsContainerStyle,
   titleExtractor,
   subtitleExtractor,
+  disabledExtractor,
   delay = 300,
   ...listItemProps
 }) => {
@@ -110,8 +112,13 @@ export const AutoCompleteInput: React.FC<AutoCompleteInputProps> = ({
           searchRef?.current?.blur();
           if (typeof onPress === "function") onPress(item, event);
         }}
-        onLongPress={(event) => onLongPress(item, event)}
-        disabled={disabled}
+        onLongPress={(event) => {
+          if (typeof onLongPress === "function") onLongPress(item, event);
+        }}
+        disabled={
+          disabled ||
+          (typeof disabledExtractor === "function" && disabledExtractor(item))
+        }
       >
         <PadView
           // @ts-ignore
