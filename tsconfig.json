@@ -5,7 +5,7 @@
     "esModuleInterop": false,
     "jsx": "react-native",
     "moduleResolution": "node",
-    "strict": true,
+    "strict": false,
     "target": "esnext",
     "resolveJsonModule": true,
     "outDir": "./dist",
