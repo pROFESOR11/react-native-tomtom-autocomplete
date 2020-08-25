@@ -13,6 +13,8 @@ export default function App() {
         <AutoCompleteInput
           inputProps={{
             placeholder: "Search",
+          }}
+          inputContainerStyle={{
             padding: 10,
             margin: 10,
             borderWidth: 2,
