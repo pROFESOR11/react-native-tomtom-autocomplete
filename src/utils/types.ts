@@ -1,3 +1,32 @@
+export interface TomTomOptions {
+  key: string;
+  limit?: number;
+  typeahead?: boolean;
+  ofs?: number;
+  countrySet?: string;
+  lat?: number;
+  lon?: number;
+  radius?: number;
+  topLeft?: string;
+  btmRight?: string;
+  language?: string;
+  extendedPostalCodesFor?: string;
+  minFuzzyLevel?: number;
+  maxFuzzyLevel?: number;
+  idxSet?: string;
+  categorySet?: string;
+  brandSet?: string;
+  connectorSet?: string;
+  minPowerKW?: number;
+  maxPowerKW?: number;
+  fuelSet?: string;
+  view?: string;
+  openingHours?: string;
+  timeZone?: string;
+  mapcodes?: string;
+  relatedPois?: string;
+}
+
 export interface TomTomPOISearchResponse {
   summary: TomTomPOISearchResponseSummary;
   results: TomTomPOISearchResponseResult[];
