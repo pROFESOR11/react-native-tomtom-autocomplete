@@ -13,6 +13,7 @@ import {
   StyleSheet,
   Platform,
   GestureResponderEvent,
+  TextStyle,
 } from "react-native";
 import PadView from "./utils/Padview";
 import useDebounce from "./utils/useDebounce";
@@ -39,10 +40,10 @@ export interface AutoCompleteInputProps
 export interface ListItemProps {
   item: TomTomPOISearchResponseResult;
   title: string | React.ReactNode;
-  titleStyle?: StyleProp<Text>;
+  titleStyle?: StyleProp<TextStyle>;
   titleProps?: ViewProps;
   subtitle?: string | React.ReactNode;
-  subtitleStyle?: StyleProp<Text>;
+  subtitleStyle?: StyleProp<TextStyle>;
   subtitleProps?: ViewProps;
   containerStyle?: ViewProps;
   onPress?: (
@@ -231,10 +232,10 @@ const styles = {
     backgroundColor: "transparent",
     ...Platform.select({
       ios: {
-        fontSize: 17,
+        fontSize: 17 as const,
       },
       default: {
-        fontSize: 16,
+        fontSize: 16 as const,
       },
     }),
   },
@@ -242,11 +243,11 @@ const styles = {
     backgroundColor: "transparent",
     ...Platform.select({
       ios: {
-        fontSize: 15,
+        fontSize: 15 as const,
       },
       default: {
         color: "rgba(0, 0, 0, 0.54)",
-        fontSize: 14,
+        fontSize: 14 as const,
       },
     }),
   },
