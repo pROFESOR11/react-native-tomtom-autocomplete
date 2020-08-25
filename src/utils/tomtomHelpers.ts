@@ -3,6 +3,9 @@ import { TomTomPOISearchResponseResult, TomTomOptions } from "./types";
 export function buildTomTomRequestUrl(query: string, options: TomTomOptions) {
   try {
     let baseUrl = `https://api.tomtom.com/search/2/search/${query}.json?`;
+    if (options.typeahead === undefined) {
+      baseUrl += `&typeahead=true`;
+    }
     for (const key of Object.keys(options)) {
       baseUrl += `&${key.toString()}=${options[key].toString()}`;
     }
