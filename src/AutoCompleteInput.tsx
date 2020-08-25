@@ -24,7 +24,8 @@ import { getPlacesFromTomTom } from "./utils/tomtomHelpers";
 const screenWidth = Dimensions.get("window").width;
 const screenHeight = Dimensions.get("window").height;
 
-export interface AutoCompleteInputProps extends ListItemProps {
+export interface AutoCompleteInputProps
+  extends Omit<ListItemProps, "item" | "title" | "subtitle"> {
   tomtomOptions: TomTomOptions;
   inputContainerStyle?: StyleProp<ViewStyle>;
   inputProps?: TextInputProps;
@@ -36,7 +37,7 @@ export interface AutoCompleteInputProps extends ListItemProps {
 }
 
 export interface ListItemProps {
-  readonly item: TomTomPOISearchResponseResult;
+  item: TomTomPOISearchResponseResult;
   title: string | React.ReactNode;
   titleStyle?: StyleProp<Text>;
   titleProps?: ViewProps;
@@ -59,7 +60,6 @@ export interface ListItemProps {
   disabledStyle?: ViewProps;
   bottomDivider?: boolean;
   topDivider?: boolean;
-  [key: string]: any;
 }
 
 export const AutoCompleteInput: React.FC<AutoCompleteInputProps> = ({
