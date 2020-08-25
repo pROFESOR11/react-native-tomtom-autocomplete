@@ -45,7 +45,7 @@ export interface ListItemProps {
   subtitle?: string | React.ReactNode;
   subtitleStyle?: StyleProp<TextStyle>;
   subtitleProps?: ViewProps;
-  containerStyle?: ViewProps;
+  containerStyle?: StyleProp<ViewStyle>;
   onPress?: (
     item: TomTomPOISearchResponseResult,
     event: GestureResponderEvent
@@ -56,7 +56,7 @@ export interface ListItemProps {
   ) => void;
   leftElement?: React.ReactNode;
   rightElement?: React.ReactNode;
-  contentContainerStyle?: ViewProps;
+  contentContainerStyle?: StyleProp<ViewStyle>;
   disabled?: boolean;
   disabledStyle?: ViewProps;
   bottomDivider?: boolean;
