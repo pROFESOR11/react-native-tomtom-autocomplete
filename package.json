@@ -1,7 +1,7 @@
 {
   "name": "react-native-tomtom-autocomplete",
   "version": "1.0.10",
-  "description": "tomtom autocomplete input component for react-native",
+  "description": "Customizable TomTom autocomplete component for iOS and Android React-Native apps",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -20,7 +20,9 @@
     "places",
     "search",
     "react",
-    "react native"
+    "react native",
+    "ios",
+    "android"
   ],
   "author": "pROFESOR11",
   "license": "MIT",
