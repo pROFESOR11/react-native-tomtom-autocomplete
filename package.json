@@ -1,9 +1,13 @@
 {
-  "name": "react-native-tomtom-autocomplete-example",
-  "version": "1.0.0",
+  "name": "react-native-tomtom-autocomplete",
+  "version": "1.0.1",
   "description": "tomtom autocomplete input component for react-native",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:pROFESOR11/react-native-tomtom-autocomplete.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
@@ -20,6 +24,10 @@
   ],
   "author": "pROFESOR11",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pROFESOR11/react-native-tomtom-autocomplete/issues"
+  },
+  "homepage": "https://github.com/pROFESOR11/react-native-tomtom-autocomplete#readme",
   "devDependencies": {
     "react": "^16.13.1",
     "react-native": "^0.62.2",
