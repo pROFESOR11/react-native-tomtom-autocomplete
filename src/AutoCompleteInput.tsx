@@ -24,7 +24,8 @@ import { getPlacesFromTomTom } from "./utils/tomtomHelpers";
 const screenWidth = Dimensions.get("window").width;
 const screenHeight = Dimensions.get("window").height;
 
-export interface AutoCompleteInputProps extends ListItemProps {
+export interface AutoCompleteInputProps
+  extends Omit<Omit<Omit<ListItemProps, "item">, "title">, "subtitle"> {
   tomtomOptions: TomTomOptions;
   inputContainerStyle?: StyleProp<ViewStyle>;
   inputProps?: TextInputProps;
@@ -37,27 +38,27 @@ export interface AutoCompleteInputProps extends ListItemProps {
 export interface ListItemProps {
   item: TomTomPOISearchResponseResult;
   title: string | React.ReactNode;
-  titleStyle: StyleProp<Text>;
-  titleProps: ViewProps;
-  subtitle: string | React.ReactNode;
-  subtitleStyle: StyleProp<Text>;
-  subtitleProps: ViewProps;
-  containerStyle: ViewProps;
-  onPress: (
+  titleStyle?: StyleProp<Text>;
+  titleProps?: ViewProps;
+  subtitle?: string | React.ReactNode;
+  subtitleStyle?: StyleProp<Text>;
+  subtitleProps?: ViewProps;
+  containerStyle?: ViewProps;
+  onPress?: (
     item: TomTomPOISearchResponseResult,
     event: GestureResponderEvent
   ) => void;
-  onLongPress: (
+  onLongPress?: (
     item: TomTomPOISearchResponseResult,
     event: GestureResponderEvent
   ) => void;
-  leftElement: React.ReactNode;
-  rightElement: React.ReactNode;
-  contentContainerStyle: ViewProps;
-  disabled: boolean;
-  disabledStyle: ViewProps;
-  bottomDivider: boolean;
-  topDivider: boolean;
+  leftElement?: React.ReactNode;
+  rightElement?: React.ReactNode;
+  contentContainerStyle?: ViewProps;
+  disabled?: boolean;
+  disabledStyle?: ViewProps;
+  bottomDivider?: boolean;
+  topDivider?: boolean;
   [key: string]: any;
 }
 
