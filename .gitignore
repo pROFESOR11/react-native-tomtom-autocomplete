@@ -1,4 +1,6 @@
 node_modules
 dist
-example
-.DS_Store
+**/.DS_Store
+example/node_modules
+example/.expo/*
+example/**/.DS_Store
