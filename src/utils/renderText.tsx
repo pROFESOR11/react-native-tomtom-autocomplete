@@ -1,9 +1,13 @@
 import renderNode from "./renderNode";
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet, Text, StyleProp, TextStyle } from "react-native";
 
-const renderText = (content: any, defaultProps: any, style: any) =>
+const renderText = (
+  content: any,
+  defaultProps: any,
+  style: StyleProp<TextStyle>
+) =>
   renderNode(Text, content, {
-    ...defaultProps,
+    ...(defaultProps as object),
     style: StyleSheet.flatten([style, defaultProps && defaultProps.style]),
   });
 
