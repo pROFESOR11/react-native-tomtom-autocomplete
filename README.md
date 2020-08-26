@@ -4,13 +4,9 @@ Customizable TomTom autocomplete component for iOS and Android React-Native apps
 
 ## Preview
 
-**Basic**
-
-![](https://raw.githubusercontent.com/pROFESOR11/react-native-tomtom-autocomplete/master/assets/basic.gif)
-
-**With Map**
-
-![](https://raw.githubusercontent.com/pROFESOR11/react-native-tomtom-autocomplete/master/assets/withMap.gif)
+|                                                                                                                      |                                                                                                                           |
+| :------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
+| ![](https://raw.githubusercontent.com/pROFESOR11/react-native-tomtom-autocomplete/master/assets/basic.gif) **Basic** | ![](https://raw.githubusercontent.com/pROFESOR11/react-native-tomtom-autocomplete/master/assets/withMap.gif) **With Map** |
 
 ## Installation
 
@@ -42,7 +38,7 @@ import AutoCompleteInput from "react-native-tomtom-autocomplete";
     inputProps={{
         placeholder: "Search",
     }}
-    onPress={(item) => setselected(item)}
+    onPress={(item) => console.log('item', item)}
     inputContainerStyle={{
         padding: 10,
         margin: 10,
@@ -82,18 +78,32 @@ _This list is a work in progress. PRs welcome!_
 
 _These props are for list items, all optional._
 
-| Prop                  | type        | description                                                                     |
-| --------------------- | ----------- | ------------------------------------------------------------------------------- |
-| titleStyle            | `TextStyle` | custom style for title                                                          |
-| titleProps            | `ViewProps` | custom props for title container                                                |
-| subtitleStyle         | `TextStyle` | custom style for subtitle                                                       |
-| subtitleProps         | `ViewProps` | custom props for subtitle container                                             |
-| containerStyle        | `ViewStyle` | custom style for outer container                                                |
-| onPress               | function    | (item: TomTomPOISearchResponseResult, event: GestureResponderEvent) => void     |
-| onLongPress           | function    | (item: TomTomPOISearchResponseResult, event: GestureResponderEvent) => void     |
-| leftElement           | `ReactNode` | component to render at the left side of each list item                          |
-| rightElement          | `ReactNode` | component to render at the right side of each list item                         |
-| contentContainerStyle | `ViewStyle` | custom style for content container                                              |
-| disabledStyle         | `ViewStyle` | this should be used with `disabledExtractor`. custom style for disabled options |
-| bottomDivider         | boolean     | if bottom divider should be rendered after each list istem                      |
-| topDivider            | boolean     | if bottom divider should be rendered before each list istem                     |
+| Prop                  | type        | description                                                                       |
+| --------------------- | ----------- | --------------------------------------------------------------------------------- |
+| titleStyle            | `TextStyle` | custom style for title                                                            |
+| titleProps            | `ViewProps` | custom props for title container                                                  |
+| subtitleStyle         | `TextStyle` | custom style for subtitle                                                         |
+| subtitleProps         | `ViewProps` | custom props for subtitle container                                               |
+| containerStyle        | `ViewStyle` | custom style for outer container                                                  |
+| onPress               | function    | (item: TomTomPOISearchResponseResult, event: GestureResponderEvent) => void       |
+| onLongPress           | function    | (item: TomTomPOISearchResponseResult, event: GestureResponderEvent) => void       |
+| leftElement           | `ReactNode` | component to render at the left side of each list item                            |
+| rightElement          | `ReactNode` | component to render at the right side of each list item                           |
+| contentContainerStyle | `ViewStyle` | custom style for content container                                                |
+| disabledStyle         | `ViewStyle` | this should be used with `disabledExtractor`. custom style for disabled list item |
+| bottomDivider         | boolean     | if bottom divider should be rendered after each list istem                        |
+| topDivider            | boolean     | if bottom divider should be rendered before each list istem                       |
+
+## Roadmap
+
+- [x] Places autocompletion
+- [x] iOS and Android compatibility
+- [] ActivityIndicatorIOS/ProgressBarAndroid loaders
+- [x] Typescript types
+- [] Current location
+- [] Tests
+
+## Inspirations
+
+- [react-native-elements](https://github.com/react-native-elements/react-native-elements)
+- [react-native-google-places-autocomplete](https://github.com/FaridSafi/react-native-google-places-autocomplete)
