@@ -5,9 +5,11 @@ Customizable TomTom autocomplete component for iOS and Android React-Native apps
 ## Preview
 
 **Basic**
+
 ![](https://raw.githubusercontent.com/pROFESOR11/react-native-tomtom-autocomplete/master/assets/basic.gif)
 
 **With Map**
+
 ![](https://raw.githubusercontent.com/pROFESOR11/react-native-tomtom-autocomplete/master/assets/withMap.gif)
 
 ## Installation
