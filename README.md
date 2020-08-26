@@ -6,7 +6,7 @@ Customizable TomTom autocomplete component for iOS and Android React-Native apps
 
 |                                                                                                                      |                                                                                                                           |
 | :------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
-| ![](https://raw.githubusercontent.com/pROFESOR11/react-native-tomtom-autocomplete/master/assets/basic.gif) **Basic** | ![](https://raw.githubusercontent.com/pROFESOR11/react-native-tomtom-autocomplete/master/assets/withMap.gif) **With Map** |
+| <img height="1000" width="550" resizeMode="contain" alt="react-native-tomtom-autocomplete-preview-basic" src="https://raw.githubusercontent.com/pROFESOR11/react-native-tomtom-autocomplete/master/assets/basic.gif" /> Basic | <img height="1000" width="550" resizeMode="contain" alt="react-native-tomtom-autocomplete-preview-withMap" src="https://raw.githubusercontent.com/pROFESOR11/react-native-tomtom-autocomplete/master/assets/withMap.gif" /> With Map |
 
 ## Installation
 
@@ -94,16 +94,16 @@ _These props are for list items, all optional._
 | bottomDivider         | boolean     | if bottom divider should be rendered after each list istem                        |
 | topDivider            | boolean     | if bottom divider should be rendered before each list istem                       |
 
-## Roadmap
-
-- [x] Places autocompletion
-- [x] iOS and Android compatibility
-- [] ActivityIndicatorIOS/ProgressBarAndroid loaders
-- [x] Typescript types
-- [] Current location
-- [] Tests
-
 ## Inspirations
 
 - [react-native-elements](https://github.com/react-native-elements/react-native-elements)
 - [react-native-google-places-autocomplete](https://github.com/FaridSafi/react-native-google-places-autocomplete)
+
+## Roadmap
+
+- [x] Places autocompletion
+- [x] iOS and Android compatibility
+- [ ] ActivityIndicatorIOS/ProgressBarAndroid loaders
+- [x] Typescript types
+- [ ] Tests
+
