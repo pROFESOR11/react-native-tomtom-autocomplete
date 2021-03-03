@@ -104,6 +104,6 @@ _These props are for list items, all optional._
 - [x] Places autocompletion
 - [x] iOS and Android compatibility
 - [ ] ActivityIndicatorIOS/ProgressBarAndroid loaders
-- [x] Typescript types
+- [x] Typescrip
 - [ ] Tests
 
